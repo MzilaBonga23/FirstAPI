@@ -1,0 +1,19 @@
+@rootURL = http://localhost:5055
+
+GET {{rootURL}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{rootURL}}/api/books
+Accept: application/json
+###
+
+GET {{rootURL}}/api/books/2
+Accept: application/json
+
+###
+
+POST {{rootURL}}/api/books
+Content: application/json
+{"id":5,"title":"The Hobbit 2","author":"J.R.R. Tolkien","yearPublished":1945}
